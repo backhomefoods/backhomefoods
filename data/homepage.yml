@@ -1,0 +1,75 @@
+################## Hero area ##################
+heroArea:
+  enable : true
+  bgImage : "images/header.jpg"
+  overlay : true
+
+################### Gallery ###################
+gallery:
+  enable : true
+  title : "FEATURED WORKS"
+  sliderItem:
+    - image : "images/slider/slider-img-1.jpg"
+    - image : "images/slider/slider-img-2.jpg"
+    - image : "images/slider/slider-img-3.jpg"
+    - image : "images/slider/slider-img-4.jpg"
+    - image : "images/slider/slider-img-1.jpg"
+    - image : "images/slider/slider-img-2.jpg"
+    - image : "images/slider/slider-img-3.jpg"
+    - image : "images/slider/slider-img-4.jpg"
+
+################ About #######################
+about:
+  enable : true
+  image : "images/black-cooker.jpg"
+  title : "WHAT'S FOR<span> DINNER?</span>"
+  description : "Backhome Foods™ heat and eat meal starters answers that age old question “What’s for Dinner?”. These crave-worthy meals perfectly pair with your favorite grain for simple and good comfort food on the table in up to 15 minutes."
+
+################# Blog ######################
+blog:
+  enable : true
+  title : "Our Latest <span>Blog</span>"
+  bgImage : "images/blog/blog-bg.jpg"
+  overlay : true
+
+
+################# food Menu ################
+pricing:
+  enable : true
+  title : "Why Is Backhome Foods So <span>Craveworthy?</span>"
+  description: "Eating Backhome Foods is like getting a warm hug on the inside.  Try it once and you will keep coming back for more.  Why are our dishes so darn good?  The trick is in our authentic spice blends, slow simmering process, and secret ingredient.   "
+  subtitle : "OUR SECRET SAUCE"
+  pricingItem:
+  - title: "Authentic Spice Blends"
+    description: "Backhome Foods™ brings consumers Simple. Comfort. Goodness - the craveable classics from the global kitchen.  These dishes give you the same taken care of feeling as comfort foods, but Backhome Foods™ dishes are naturally good for you. We capture the natural goodness found in simple, ingredients that can be found in your cupboard.  We select the perfect combinations that deliver authentic, craveable, goodness in every bite!"
+    # price : "$ 125.00"
+
+  - title: "Secret ingredients"
+    description: "At Backhome Foods™, we achieve super deliciousness by selecting ingredients that are naturally high in umami such as cheese, mushrooms, tomatoes, and meats.  Umami is the fifth taste, joining sweet, sour, salty and bitter. These are unique tastes that cannot be created by mixing other tastes, and are known as the basic, or primary tastes.  The tastes that makes you close your eyes and savor each bite."
+    # price : "$ 100.00"
+
+  - title: "Slow Slimmer"
+    description: "Each small batch of Backhome Foods™ entrees are slowly simmered to develop yummy goodness that cannot be replicated.  We take the time, so you don’t have to.  Simmering cooks, the food gently and slowly, allowing it to maintain its structure in ways that are impossible with boiling. If you’re cooking fish, simmering allows it to stay together without flaking apart; if you’re cooking meat, simmering keeps it tender and juicy instead of drying it out like boiling, which hardens the proteins.  Most importantly, simmering allows the various tastes to mingle and layer one over the other, creating a depth of flavor over time that can’t be fabricated."
+    # price : "$ 20.00"
+
+ # - title: "Meat of Skewers"
+  #  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&"
+   # price : "$ 45.00"
+
+################### Subscription ################
+subscription:
+  enable : true
+  bgImage : "images/subscribe-bg.jpg"
+  title : "SUBSCRIBE to our <span>NEWSLETTER</span>"
+  description : "Backhome Foods Attends Specialty Food Show 2019!"
+  #Mailchimp subscription configaration
+  formAction : "https://themefisher.us9.list-manage.com/subscribe/post?u=f95ece2732a6e9925f2e70a61&amp;id=b1e227529e"
+  formName : "b_f95ece2732a6e9925f2e70a61_b1e227529e"
+  overlay : true
+
+################ Contact #######################
+contact:
+  enable : true
+  title: "Let's <span> Contact Us </span>"
+  subtitle: "SIGN UP FOR EMAIL ALERTS"
+  formAction : "#" #contact form works with formspree.io
