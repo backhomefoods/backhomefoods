@@ -120,7 +120,7 @@ content = "Maryland, VA"
 [[params.footer.contactItem]]
 title="E mail"
 icon = "fa fa-envelope"
-content = "nana@backhomefoodco.com"
+content = "nana@backhomefood.com"
 
 ######################### footer gallery
 [[params.footer.gallery]]
