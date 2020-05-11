@@ -22,7 +22,7 @@ gallery:
 about:
   enable : true
   image : "images/black-cooker.jpg"
-  title : "WHAT'S FOR<span> DINNER?</span>"
+  title : "WHAT'S FOR<span> DINNER</span>?"
   description : "Backhome Foods™ heat and eat meal starters answers that age old question “What’s for Dinner?”. These crave-worthy meals perfectly pair with your favorite grain for simple and good comfort food on the table in up to 15 minutes."
 
 ################# Blog ######################
@@ -36,7 +36,7 @@ blog:
 ################# food Menu ################
 pricing:
   enable : true
-  title : "Why Is Backhome Foods So <span>Craveworthy?</span>"
+  title : "Why Is Backhome Foods So <span>Craveworthy</span>?"
   description: "Eating Backhome Foods is like getting a warm hug on the inside.  Try it once and you will keep coming back for more.  Why are our dishes so darn good?  The trick is in our authentic spice blends, slow simmering process, and secret ingredient.   "
   subtitle : "OUR SECRET SAUCE"
   pricingItem:
@@ -63,8 +63,8 @@ subscription:
   title : "SUBSCRIBE to our <span>NEWSLETTER</span>"
   description : "Backhome Foods Attends Specialty Food Show 2019!"
   #Mailchimp subscription configaration
-  formAction : "https://themefisher.us9.list-manage.com/subscribe/post?u=f95ece2732a6e9925f2e70a61&amp;id=b1e227529e"
-  formName : "b_f95ece2732a6e9925f2e70a61_b1e227529e"
+  formAction : "https://backhomefoodco.us18.list-manage.com/subscribe/post?u=65d28c35170d87c77ccaf2074&amp;id=a74727a293"
+  formName : "MERGE0"
   overlay : true
 
 ################ Contact #######################

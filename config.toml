@@ -63,7 +63,7 @@ weight = 2
 
 [[menu.main]]
 name = "Blog"
-URL = "blog"
+URL = "/blog/"
 weight = 3
 
 [[menu.main]]
@@ -144,16 +144,20 @@ image = "images/slider/slider-img-2.jpg"
 ######################## Social Icon
 [[params.footer.socialLink]]
 icon = "facebook"
-link = "https://fb.com/themefisher"
+link = "https://www.facebook.com/backhomefoodco/"
 
 [[params.footer.socialLink]]
 icon = "twitter"
-link = "https://fb.com/themefisher"
+link = "https://mobile.twitter.com/backhomefoods"
 
 [[params.footer.socialLink]]
-icon = "dribbble"
-link = "https://fb.com/themefisher"
+icon = "pinterest"
+link = "https://www.pinterest.com/17t3eo732wabwlf0oe4jn3k4z8kdy6/boards/"
 
 [[params.footer.socialLink]]
 icon = "instagram"
-link = "https://fb.com/themefisher"
+link = "https://www.instagram.com/backhomefoods/"
+
+[[params.footer.socialLink]]
+icon = "linkedin"
+link = "https://www.linkedin.com/company/backhome-foods/"
