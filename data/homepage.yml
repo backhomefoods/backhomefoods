@@ -64,7 +64,7 @@ subscription:
   description : "Backhome Foods Attends Specialty Food Show 2019!"
   #Mailchimp subscription configaration
   formAction : "https://backhomefoodco.us18.list-manage.com/subscribe/post?u=65d28c35170d87c77ccaf2074&amp;id=a74727a293"
-  formName : "MERGE0"
+  #formName : "MERGE0"
   overlay : true
 
 ################ Contact #######################
