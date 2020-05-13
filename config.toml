@@ -67,7 +67,7 @@ URL = "blog"
 weight = 3
 
 [[menu.main]]
-name = "Sauce"
+name = "Our Secret Sauce"
 URL = "price"
 weight = 4
 

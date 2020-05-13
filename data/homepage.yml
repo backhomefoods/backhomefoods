@@ -7,7 +7,7 @@ heroArea:
 ################### Gallery ###################
 gallery:
   enable : true
-  title : "FEATURED WORKS"
+  title : "WHAT WE’RE <span>COOKING</span>"
   sliderItem:
     - image : "images/slider/slider-img-1.jpg"
     - image : "images/slider/slider-img-2.jpg"
@@ -38,7 +38,7 @@ pricing:
   enable : true
   title : "Why Is Backhome Foods So <span>Craveworthy</span>?"
   description: "Eating Backhome Foods is like getting a warm hug on the inside.  Try it once and you will keep coming back for more.  Why are our dishes so darn good?  The trick is in our authentic spice blends, slow simmering process, and secret ingredient.   "
-  subtitle : "OUR SECRET SAUCE"
+  subtitle : "<span>OUR SECRET SAUCE</span>"
   pricingItem:
   - title: "Authentic Spice Blends"
     description: "Backhome Foods™ brings consumers Simple. Comfort. Goodness - the craveable classics from the global kitchen.  These dishes give you the same taken care of feeling as comfort foods, but Backhome Foods™ dishes are naturally good for you. We capture the natural goodness found in simple, ingredients that can be found in your cupboard.  We select the perfect combinations that deliver authentic, craveable, goodness in every bite!"
@@ -72,4 +72,4 @@ contact:
   enable : true
   title: "Let's <span> Contact Us </span>"
   subtitle: "SIGN UP FOR EMAIL ALERTS"
-  formAction : "#" #contact form works with formspree.io
+  formAction : "https://formspree.io/mdowkppl" #contact form works with formspree.io
