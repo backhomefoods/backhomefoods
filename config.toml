@@ -93,6 +93,8 @@ google_analitycs_id = "Your ID"
 # copyright
 copyright = "Copyright 2020 - All Rights Reserved. Design and Developed By Themefisher.com"
 
+GraphCommentId = "Andradge-SPPE"
+
 # Preloader
 [params.preloader]
 enable = true

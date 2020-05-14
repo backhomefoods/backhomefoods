@@ -1,0 +1,110 @@
+---
+title: "Part 1 Statistical Inference"
+author: Domtria Simba M
+date: '2012-02-12'
+slug: part-1-statistical-inference
+categories:
+  - exploratory analysis
+  - statistical inference
+description: "In this project you will investigate the exponential distribution in R and compare it with the Central Limit Theorem."
+draft: no
+editor_options:
+  chunk_output_type: console
+tags: 
+  - R
+  - GGPLOT
+banner: "img/blog-images/header-images/2012-02-12-part-1-statistical-inference.png"
+---
+
+
+
+<div id="introduction" class="section level2">
+<h2><strong>Introduction</strong></h2>
+<p>In this project you will investigate the exponential distribution in R and compare it with the Central Limit Theorem. The exponential distribution can be simulated in R with rexp(n, <span class="math inline">\(\lambda\)</span>) where lambda(<span class="math inline">\(\lambda\)</span>) is the rate parameter. The mean of exponential distribution is 1/<span class="math inline">\(\lambda\)</span> and the standard deviation is also 1/<span class="math inline">\(\lambda\)</span>. Set <span class="math inline">\(\lambda\)</span> = 0.2 for all of the simulations. You will investigate the distribution of averages of 40 exponentials. Note that you will need to do a thousand simulations</p>
+</div>
+<div id="loading-required-libraries" class="section level2">
+<h2><strong>Loading required libraries</strong></h2>
+<pre class="r"><code># Required libraries
+library(ggplot2)</code></pre>
+</div>
+<div id="simulation-data-and-preprocessing" class="section level2">
+<h2><strong>Simulation Data and Preprocessing</strong></h2>
+<pre class="r"><code># set constants
+lambda &lt;- 0.2 # lambda for rexp
+n &lt;- 40 # exponentials
+simCount &lt;- 1000 # number of simulations
+# set the seed to create reproducability
+set.seed(02122016)
+
+
+# run the test resulting in n x SimCount matrix
+expSimSample &lt;- matrix(rexp(n * simCount, lambda), nrow=simCount)
+expSimSampleMeans &lt;- apply(expSimSample, 1, mean)</code></pre>
+</div>
+<div id="sample-mean-versus-theoretical-mean" class="section level2">
+<h2><strong>Sample Mean versus Theoretical Mean</strong></h2>
+<p>Sample mean <span class="math inline">\((\bar{X})\)</span> from the simulation sample</p>
+<pre class="r"><code>mean(expSimSample)</code></pre>
+<pre><code>## [1] 5.031448</code></pre>
+<p>The theoretical mean <span class="math inline">\(\mu\)</span> of a exponential distribution of rate <span class="math inline">\(\lambda\)</span> is</p>
+<p><span class="math inline">\(\mu= \frac{1}{\lambda}\)</span></p>
+<pre class="r"><code>(mu &lt;- 1/lambda)</code></pre>
+<pre><code>## [1] 5</code></pre>
+<p>Sample mean <span class="math inline">\((\bar{X})\)</span> and the theoretical mean <span class="math inline">\(\mu\)</span> are very close.</p>
+</div>
+<div id="sample-variance-versus-theoretical-variance" class="section level2">
+<h2><strong>Sample Variance versus Theoretical Variance</strong></h2>
+<p>Sample variance <span class="math inline">\(s^2\)</span> from the simulation sample means</p>
+<pre class="r"><code>#The var function calculates population variance
+(samplevar &lt;-var(expSimSampleMeans))</code></pre>
+<pre><code>## [1] 0.6404317</code></pre>
+<p>The theoretical standard deviation <span class="math inline">\(\sigma\)</span> of a exponential distribution of rate <span class="math inline">\(\lambda\)</span> is</p>
+<p><span class="math inline">\(\sigma = \frac{1/\lambda}{\sqrt{n}}\)</span></p>
+<p>The theoretical variance <span class="math inline">\(\sigma^2\)</span> of a exponential distribution of rate <span class="math inline">\(\lambda\)</span> is</p>
+<p><span class="math inline">\(\sigma^2 = (\frac{1/\lambda}{\sqrt{n}})^2\)</span></p>
+<pre class="r"><code>(sd &lt;- 1/lambda/sqrt(n))
+(var &lt;- sd^2)</code></pre>
+<pre><code>## [1] 0.7905694
+## [1] 0.625</code></pre>
+<p>[1] “As you can see, the sample variance of is 0.64 which is also close the theoretical variance 0.625 .”</p>
+</div>
+<div id="show-that-the-distribution-is-approximately-normal" class="section level2">
+<h2><strong>Show that the distribution is approximately normal</strong></h2>
+<pre class="r"><code>plotdist(expSimSampleMeans, mu)</code></pre>
+<p><img src="/blog/2012-02-12-part-1-statistical-inference_files/figure-html/Distribution-1.png" width="720" /></p>
+<p>The graph shows the sample mean and its distribution(blue line). It is approximately normal compared to the theoretical mean of the exponential distribution based on the given lamba. This example validates the Centrai Limit Theorem.</p>
+</div>
+<div id="appendix" class="section level2">
+<h2><strong>Appendix</strong></h2>
+<pre class="r"><code>#Function for plotting histogram
+plotdist &lt;- function(bar.data, mu){
+  ggplot(data.frame(bar.data), aes (x = bar.data)) + 
+  geom_histogram(aes(y = ..density..), colour = &quot;#000000&quot;, 
+                 fill = &quot;#FFFFAA&quot;, binwidth=0.1) + 
+  geom_density(colour = &quot;darkblue&quot;, size =rel(2)) +
+  geom_vline(xintercept = mu, size = rel(2),colour = &quot;red&quot;) +
+  geom_vline(xintercept = mean(bar.data), size = rel(2),
+             colour = &quot;darkblue&quot;) +
+  xlab(expression(bar(X))) + 
+  ggtitle(expression(paste(&quot;Distribution of averages of samples&quot;,
+                           &quot; drawn from exponential distribution with &quot;,
+                           lambda, &quot; = 0.2&quot;, sep = &quot; &quot;))) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 1, vjust=.5,
+                                   face=&quot;bold&quot;, color =&quot;black&quot;, size =rel(2)),
+        axis.title.x = element_text(size = rel(2),vjust= -.5),
+        axis.text.y = element_text(face=&quot;bold&quot;, color=&quot;black&quot;, size =rel(2)),
+        axis.title.y = element_text(size = rel(2), angle = 90,vjust=-.2),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(), 
+        panel.background = element_rect(fill = &quot;transparent&quot;),
+        axis.line = element_line(colour = &quot;black&quot;, size=1, linetype = &quot;solid&quot;),
+        plot.title = element_text(vjust= 1,lineheight=.8, face=&quot;bold&quot;,
+                                  color=&quot;#CD0000&quot;, size=16))+
+  scale_x_continuous(breaks=seq(mu-3,mu+3,1), limits=c(mu-3,mu+3))+
+  stat_function(fun = dnorm, arg = list(mean = mu, sd = sd),
+                colour = &quot;red&quot;, size =rel(2))
+}</code></pre>
+<div id="graphcomment">
+
+</div>
+</div>
