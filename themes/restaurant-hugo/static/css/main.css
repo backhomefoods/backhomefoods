@@ -111,7 +111,7 @@ a:active {
 
 .heading span {
   font-size: 45px;
-  color: #ff530a;
+  color: #bd695a; /*--#ff530a; old to new--*/
   font-weight: 600;
 }
 
@@ -136,7 +136,7 @@ a:active {
 }
 
 .title span {
-  color: #FF5333;
+  color: #bd695a;
 }
 
 .before-border {
@@ -360,7 +360,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 #blog .block ul li h3 a:hover {
-  color: #FF5333;
+  color: #bd695a; /*--#FF5333;--*/
 }
 
 
@@ -721,7 +721,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 #contact-us .block button {
-  background: #FF4F02;
+  background: #bd695a; /*--#FF4F02; old to new --*/
   float: right;
   color: #fff;
   font-weight: 600;
@@ -760,7 +760,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 #footer .block h3 span {
-  color: #FF4F02;
+  color: #bd695a; /*--#FF4F02; old to new --*/
 }
 
 #footer .block .blog ul,
@@ -780,7 +780,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 #footer .block .gallary ul li h4 {
   padding-bottom: 10px;
   display: block;
-  color: #FF4F02;
+  color: #bd695a; /*--#FF4F02; old to new --*/
 }
 
 #footer .block .blog ul li h4 i,
@@ -794,7 +794,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 #footer .block .blog ul li h4 a,
 #footer .block .info ul li h4 a,
 #footer .block .gallary ul li h4 a {
-  color: #FF4F02;
+  color: #bd695a; /*--#FF4F02; old to new --*/
   font-size: 20px;
   font-weight: 600;
 }
@@ -813,7 +813,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 #footer .block .social-media-link h3 span {
-  color: #FF4F02;
+  color: #bd695a; /*--#FF4F02; old to new --*/
 }
 
 #footer .block .social-media-link ul li {
@@ -837,7 +837,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 #footer .block .social-media-link ul li a:hover {
-  background: #FF4F02;
+  background: #bd695a; /*--#FF4F02; old to new --*/
   color: #fff;
 }
 
@@ -859,7 +859,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 #footer-bottom p a {
-  color: #FF4F02;
+  color: #bd695a; /*--#FF4F02; old to new --*/
 }
 
 /* slider */
@@ -899,7 +899,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 .slick-dots li.slick-active button {
-  background: #FF4F02;
+  background: #bd695a; /*--#FF4F02; old to new --*/
 }
 
 .gallery-slider .slick-arrow {
@@ -942,11 +942,11 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   text-align: center;
   margin-right: 6px;
   font-weight: 700;
-  color: #FF4F02
+  color: #bd695a; /*--#FF4F02; old to new --*/
 }
 
 .pagination .page-item .page-link:hover {
-  background: #FF4F02;
+  background: #bd695a; /*--#FF4F02; old to new --*/
   color: #fff
 }
 
